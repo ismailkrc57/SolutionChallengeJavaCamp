@@ -1,0 +1,6 @@
+// Use Base PK for child class
+@PrimaryKeyJoinColumn(name = "user_id", referencedColumnName = "id")
+
+
+// Lazy initializer for Json
+@JsonIgnoreProperties({"hibernateLazyInitializer","handler"})
