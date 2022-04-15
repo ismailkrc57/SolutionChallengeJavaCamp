@@ -1,5 +1,6 @@
 // Use Base PK for child class
-@PrimaryKeyJoinColumn(name = "user_id", referencedColumnName = "id")
+@Inheritance(strategy = InheritanceType.JOINED) -> for base class
+@PrimaryKeyJoinColumn(name = "user_id", referencedColumnName = "id") -> for child class
 
 
 // Lazy initializer for Json
