@@ -1,4 +1,4 @@
-package com.scpg.ikg.core.exceptions;
+
 
 import lombok.Data;
 import org.springframework.http.HttpStatus;
