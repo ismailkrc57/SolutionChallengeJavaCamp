@@ -16,6 +16,7 @@ import java.util.List;
 @ControllerAdvice
 public class CustomRestExceptionHandler extends ResponseEntityExceptionHandler {
 
+        @ExceptionHandler(value = {IllegalArgumentException.class, IllegalStateException.class})
     @Override
     protected ResponseEntity<Object> handleMethodArgumentNotValid(
             MethodArgumentNotValidException exception,
